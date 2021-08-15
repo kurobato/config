@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gitops-deployment
+spec:
+  replicas: 3
+  selector:
+    mattchLabels:
+      app: gitops
+  templete:
+    metadata:
+      labels:
+        app: gitops
+    spec:
+      containers:
+      - name: gitops
+        iamge: docker.io/l3j5g7d9/gitops-go-app:latest
+        iamgePullPolicy: IfNotPresent
+
