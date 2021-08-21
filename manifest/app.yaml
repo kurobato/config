@@ -15,5 +15,5 @@ spec:
       containers:
       - name: gitops
         image: docker.io/l3j5g7d9/gitops-go-app:latest
-        iamgePullPolicy: IfNotPresent
+        imagePullPolicy: IfNotPresent
 
