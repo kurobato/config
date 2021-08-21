@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gitops-deployment
+  name: 26
 spec:
   replicas: 3
   selector:
@@ -13,7 +13,6 @@ spec:
         app: gitops
     spec:
       containers:
-      - name: gitops
-        image: docker.io/l3j5g7d9/gitops-go-app:latest
-        imagePullPolicy: IfNotPresent
-
+        - name: gitops
+          image: docker.io/l3j5g7d9/gitops-go-app:latest
+          imagePullPolicy: IfNotPresent
