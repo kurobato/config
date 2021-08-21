@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: gitops
-  templete:
+  template:
     metadata:
       labels:
         app: gitops
