@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 3
   selector:
-    mattchLabels:
+    matchLabels:
       app: gitops
   templete:
     metadata:
